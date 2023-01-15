@@ -20,12 +20,11 @@ img{
     text-decoration: none;}
 
 
-.body{font-family: 'Roboto', sans-serif;
+.body {font-family: 'Roboto', sans-serif;
     font-weight: 500;}
 
-.address{font-style: normal;}
-
-.mail{margin-right: 40px;}
+.address{font-style: normal;
+    margin-left: auto;}
 
 button{cursor: pointer;}
 
@@ -45,19 +44,30 @@ button{cursor: pointer;}
     margin-left: auto;
     margin-right: auto;
 }
-
+.menu-item{
+    display: flex;
+    gap: 40px;
+    
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    }
+.menu{
+    display: flex;
+    gap: 40px;
+    
+    }
 .header-conteiner{
     display: flex;
-    justify-content: space-between;
 }
-
 .navigation{
     display: flex;
-align-items: center;}
-
+    align-items: center;
+}
 
 
 .logo-link{
+    margin-right: 76px;
 font-family: 'Raleway',sans-serif;
 font-style: normal;
 font-weight: 800;
@@ -79,16 +89,7 @@ color: #2E2F42;
     padding-top: 188px;
     padding-bottom: 188px;}
 
-.menu{
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    margin-left: 74px;
-}
-.menu-item :not(:last-child)
-{margin-right: 40px;}
+
 
 .box-hero{   
     display: flex;
@@ -132,6 +133,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 /* portfolio ======================================= */
 .buttons {
+    padding: 12px 24px;
 font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -147,30 +149,31 @@ font-family: inherit;
     background-color: #404BBF;
     color: var(--text-button);
 }
-.button-section
 
+/* .button-section{background-color: aqua;} */
 .list-buttons{
     padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     display: flex;
     justify-content: center; 
-    margin-right: auto;
-    margin-left: auto;
+
     gap:24px
 }
 .images-content{
-    /* +++++ */
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
 }
 .content{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
     border: 1px solid #E7E9FC;
 border-top: none;}
 
 .photo-item{
-    width: calc((100% - 56px) / 3 );
+    width: calc((100% - 2 * 24px) / 3 );
 }
 
 /* ======================================================== */
@@ -189,19 +192,34 @@ border-top: none;}
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.advantages{
-    padding-top: 120px;
+.advantages-general{
+    width: calc((100% - 24px * 3) / 4 );
 }
 .advantages-list{
     display: flex;
     gap: 24px;
 }
+.advantages{padding-top: 120px;}
 
+.title-general{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 
+    color: var(--second-title);
+}
+.text-general{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
+    color: var(--p-text);
+}
 /* ________________________________________________________SECT3 */
 .title-jobs{
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -210,10 +228,6 @@ border-top: none;}
     text-transform: capitalize;
 
     color: #2E2F42;}
-
-.image-jobs{
-    width: calc((100%-24px) / 3);
-}
 
 .we-doing-list{
     display: flex;
@@ -224,6 +238,9 @@ border-top: none;}
     background-color:#F4F4FD;;
     padding-top: 120px;
 }
+.our-team-resume{
+    padding-top: 32px;
+padding-bottom: 32px; }
 .title-team{
     margin-bottom: 72px;
     font-weight: 700;
@@ -244,21 +261,21 @@ border-top: none;}
 background: #F4F4FD;}
 
 .title-item-team{
+    width: calc((100% - 3 * 24) / 4);
     text-align: center;
 background: #FFFFFF;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;}
 
-.title-general{
-    margin-bottom: 8px;
+.title-general-team{
+
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
     color: var(--second-title);
 }
-.text-general{
-    margin-bottom: 32px;
+.text-general-team{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
