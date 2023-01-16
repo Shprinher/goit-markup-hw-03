@@ -152,13 +152,16 @@ font-family: inherit;
 
 /* .button-section{background-color: aqua;} */
 .list-buttons{
-    padding-top: 96px;
+
     margin-bottom: 72px;
     display: flex;
     justify-content: center; 
 
     gap:24px
 }
+.button-section{
+    padding-top: 96px;}
+
 .images-content{
     display: flex;
     flex-wrap: wrap;
@@ -202,6 +205,7 @@ border-top: none;}
 .advantages{padding-top: 120px;}
 
 .title-general{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -261,14 +265,14 @@ padding-bottom: 32px; }
 background: #F4F4FD;}
 
 .title-item-team{
-    width: calc((100% - 3 * 24) / 4);
+    width: calc((100% - 3 * 24px) / 4);
     text-align: center;
 background: #FFFFFF;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;}
 
 .title-general-team{
-
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -287,7 +291,8 @@ border-radius: 0px 0px 4px 4px;}
 
 /* ________________________________________________________FOOTER */
 .footer{padding-top: 100px;
-padding-bottom: 100px;}
+padding-bottom: 100px;
+}
 
 .footer-text{
     margin-top: 16px;
@@ -300,4 +305,7 @@ padding-bottom: 100px;}
     letter-spacing: 0.02em;
 
     color: #E7E9FC;
+}
+.margin{
+    margin-right: 0;
 }
